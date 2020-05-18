@@ -1,12 +1,8 @@
-@charset "UTF-8";
 .modal-btn {
   cursor: pointer;
 }
 .modal-btn:hover {
   color: #fff;
-}
-.modal-btn:hover .mdi::before {
-  content: "󰞋" !important;
 }
 
 .modal-content,
