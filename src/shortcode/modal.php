@@ -69,19 +69,9 @@ class andyp_modal
 
     public function render_iframe()
     {
-        $this->output .= '<iframe ';
-        $this->arg_to_param('src');
-        $this->output .= '></iframe>';
-    }
-
-
-    public function arg_to_param($arg)
-    {
-        $out = '';
-        if (isset($this->args[$arg])) {
-            $out = $this->args[$arg];
-        }
-        $this->output .= $arg.'="'.$out.'" ';
+        $this->output .= '<iframe id="'.$this->args['id'].'-iframe" ';
+            $this->output .= 'data-src='.$this->args['src'];
+        $this->output .= ' ></iframe>';
     }
 
     

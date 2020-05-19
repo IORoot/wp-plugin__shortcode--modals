@@ -1,6 +1,6 @@
 # Simple shortcode for modals
 
-These are css-only modals based on the `<input type="checkbox">` trick.
+These are modals based on the `<input type="checkbox">` trick.
 
 Doesn't rely on anything or have any dependencies.
 
@@ -28,6 +28,23 @@ just have to have a `<label>` that has it's `for=""` attribute pointing to your 
 ```
 
 You don't have to use the `modal-btn` class, it just adds a pointer cursor.
+
+
+## The Javascript
+
+The onclick method of the button/label will update the `src` of the iframe and load it.
+Otherwise, the page has to wait until all modals are loaded.
+This is used to lazyload the iFrame.
+
+The label will need an onClick event to load the src.
+ 
+ ```
+<label onclick="setsrc('#myiframe')" class="modal-btn" for="my-modal">
+    Click here for My Modal
+</label>
+```
+
+This will look at the iframe's `data-src` value and set that value to `src` to load it.
 
 ## Media Query
 
