@@ -27,9 +27,3 @@ require __DIR__.'/src/shortcode/modal.php';
 //  │                             The Shortcode                               │
 //  └─────────────────────────────────────────────────────────────────────────┘
 require __DIR__.'/src/shortcode/create_shortcode.php';
-
-//  ┌─────────────────────────────────────────────────────────────────────────┐
-//  │                             The Shortcode                               │
-//  └─────────────────────────────────────────────────────────────────────────┘
-require __DIR__.'/src/enqueue/enqueue_styles.php';
-
